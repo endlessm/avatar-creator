@@ -45,3 +45,10 @@ class Grid(Gtk.Grid):
 
         widget.get_style_context().add_class('selected')
 
+    def set(self, path):
+        if not self.selected_widget:
+            return
+
+        pos = self.selected_widget.props.name.split('_')[1]
+        image = getattr(self, f'image_{pos}')
+        image.set_from_file(path)

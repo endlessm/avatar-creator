@@ -68,11 +68,28 @@
             <property name="can-focus">False</property>
             <property name="orientation">vertical</property>
             <child>
-              <object class="AvatarCreatorGrid" id="grid">
-              </object>
+              <object class="AvatarCreatorGrid" id="grid" />
             </child>
             <child>
-              <placeholder/>
+
+              <object class="GtkScrolledWindow">
+                <property name="margin-top">32</property>
+                <property name="vexpand">1</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="hscrollbar_policy">never</property>
+                <property name="propagate_natural_width">True</property>
+                <child>
+                  <object class="GtkViewport">
+                    <child>
+                      <object class="GtkFlowBox" id="modules">
+                        <property name="name">modules</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+
             </child>
           </object>
 

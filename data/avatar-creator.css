@@ -20,6 +20,7 @@
   min-height: 50px;
   margin: 0;
   padding: 0;
+  background: rgb(0, 255, 0);
 }
 
 #avatar-grid {

@@ -69,6 +69,13 @@ install_subdir(
   install_dir: python_dir
 )
 
+configure_file(
+  input: 'config.py.in',
+  output: 'config.py',
+  configuration: conf,
+  install_dir: join_paths(python_dir, 'avatar_creator')
+)
+
 message('Preparing init file')
 configure_file(
   input: 'avatar-creator.in',

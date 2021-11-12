@@ -69,3 +69,5 @@ if appstreamcli.found()
 endif
 
 subdir('icons')
+
+install_subdir('assets', install_dir: DATA_DIR)
