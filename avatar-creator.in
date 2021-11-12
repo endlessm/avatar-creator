@@ -1,0 +1,37 @@
+#!@PYTHON@
+
+import sys
+import os
+import locale
+import gettext
+
+sys.path.insert(1, '@PYTHON_EXEC_DIR@')
+sys.path.insert(1, '@PYTHON_DIR@')
+
+from gi.repository import Gio
+
+localedir = '@LOCALE_DIR@'
+pkgdatadir = '@DATA_DIR@'
+
+
+if __name__ == "__main__":
+    locale.bindtextdomain('avatar-creator', localedir)
+    locale.textdomain('avatar-creator')
+    gettext.bindtextdomain('avatar-creator', localedir)
+    gettext.textdomain('avatar-creator')
+
+    resource = Gio.resource_load(os.path.join(pkgdatadir, 'avatar-creator.gresource'))
+    Gio.Resource._register(resource)
+
+    from avatar_creator.application import Application
+
+    if @PROFILE@ == 'Devel':
+        Application.development_mode = True
+        Application.application_id = '@APPID@'
+    else:
+        Application.development_mode = False
+
+    app = Application(localedir=localedir)
+
+    exit_status = app.run(sys.argv)
+    sys.exit(exit_status)

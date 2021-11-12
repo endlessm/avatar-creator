@@ -1,0 +1,10 @@
+**/__pycache__
+**/*.*~
+data/#*#
+.project
+.pydevproject
+_build
+.buildconfig
+.vscode
+tags.rOfNyA
+flatpak/.flatpak-builder/

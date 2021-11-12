@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkPopover" id="menubutton_popover">
+    <property name="child">
+      <object class="GtkBox" id="menubutton_popover_box">
+        <property name="orientation">vertical</property>
+        <property name="margin-start">12</property>
+        <property name="margin-end">12</property>
+        <property name="margin-top">12</property>
+        <property name="margin-bottom">12</property>
+        <child>
+          <object class="GtkModelButton">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="action_name">app.save</property>
+            <property name="text" translatable="yes">Save</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSeparator"/>
+        </child>
+        <child>
+          <object class="GtkModelButton">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="action_name">app.about</property>
+            <property name="text" translatable="yes" comments="&quot;Avatar Editor&quot; is the application name">About Avatar Editor</property>
+          </object>
+        </child>
+      </object>
+    </property>
+  </object>
+  <object class="GtkHeaderBar" id="headerbar">
+    <child type="title">
+      <object class="GtkLabel">
+        <property name="label" translatable="yes">Create your own Avatar</property>
+        <property name="hexpand">1</property>
+        <property name="visible">True</property>
+        <attributes>
+          <attribute name="weight" value="bold"/>
+        </attributes>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuButton" id="menupopover_button">
+        <property name="focusable">1</property>
+        <property name="receives_default">1</property>
+        <property name="popover">menubutton_popover</property>
+        <property name="icon_name">open-menu-symbolic</property>
+      </object>
+    </child>
+  </object>
+
+  <template class="AvatarCreatorWindow" parent="GtkApplicationWindow">
+    <property name="can_focus">False</property>
+    <property name="resizable">True</property>
+    <property name="show_menubar">False</property>
+  </template>
+
+</interface>

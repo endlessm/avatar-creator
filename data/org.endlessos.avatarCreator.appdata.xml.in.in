@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+ <id>@APPID@</id>
+ <name>Avatar Creator</name>
+ <launchable type="desktop-id">@APPID@.desktop</launchable>
+ <project_license>GPL-3.0</project_license>
+ <metadata_license>CC0-1.0</metadata_license>
+ <content_rating type="oars-1.1" />
+ <summary>An Avatar Creator for GNOME</summary>
+ <description>
+    <p>Avatar Creator is a funny app to create custom avatar images</p>
+ </description>
+
+ <categories>
+   <category>Games</category>
+ </categories>
+
+   <releases>
+   </releases>
+
+ <url type="homepage">https://github.com/endlessm/avatar-creator/</url>
+ <updatecontact>danigm@endlessos.org</updatecontact>
+ <developer_name>Daniel García Moreno</developer_name>
+</component>
