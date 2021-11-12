@@ -6,6 +6,7 @@ class MainWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'AvatarCreatorWindow'
 
     headerbar = Gtk.Template.Child()
+    grid = Gtk.Template.Child()
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

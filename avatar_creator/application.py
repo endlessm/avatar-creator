@@ -22,6 +22,10 @@ import sys
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
 from gi.repository import GLib, Gio, Gtk, GObject, Adw
+
+from .grid import Grid
+GObject.type_register(Grid)
+
 from .main_window import MainWindow
 
 

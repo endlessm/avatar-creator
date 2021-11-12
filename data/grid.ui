@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="AvatarCreatorGrid" parent="GtkGrid">
+    <!-- n-columns=3 n-rows=3 -->
+    <property name="name">avatar-grid</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="halign">center</property>
+
+    <!-- First row -->
+    <!-- (0, 0) -->
+    <child>
+      <object class="GtkButton" id="grid_00">
+        <signal name="clicked" handler="_on_select_grid" swapped="no"/>
+        <property name="name">grid_00</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <child>
+          <object class="GtkImage" id="image_00">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="icon-name">gtk-missing-image</property>
+          </object>
+        </child>
+        <style>
+          <class name="grid"/>
+        </style>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+
+    <!-- (0, 1) -->
+    <child>
+      <object class="GtkButton" id="grid_01">
+        <signal name="clicked" handler="_on_select_grid" swapped="no"/>
+        <property name="name">grid_01</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <child>
+          <object class="GtkImage" id="image_01">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="icon-name">gtk-missing-image</property>
+          </object>
+        </child>
+        <style>
+          <class name="grid"/>
+        </style>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+
+    <!-- (0, 2) -->
+    <child>
+      <object class="GtkButton" id="grid_02">
+        <signal name="clicked" handler="_on_select_grid" swapped="no"/>
+        <property name="name">grid_02</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <child>
+          <object class="GtkImage" id="image_02">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="icon-name">gtk-missing-image</property>
+          </object>
+        </child>
+        <style>
+          <class name="grid"/>
+        </style>
+        <layout>
+          <property name="column">2</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+
+    <!-- Second row -->
+    <!-- (1, 0) -->
+    <child>
+      <object class="GtkButton" id="grid_10">
+        <signal name="clicked" handler="_on_select_grid" swapped="no"/>
+        <property name="name">grid_10</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <child>
+          <object class="GtkImage" id="image_10">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="icon-name">gtk-missing-image</property>
+          </object>
+        </child>
+        <style>
+          <class name="grid"/>
+        </style>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+
+    <!-- (1, 1) -->
+    <child>
+      <object class="GtkButton" id="grid_11">
+        <signal name="clicked" handler="_on_select_grid" swapped="no"/>
+        <property name="name">grid_11</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <child>
+          <object class="GtkImage" id="image_11">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="icon-name">gtk-missing-image</property>
+          </object>
+        </child>
+        <style>
+          <class name="grid"/>
+        </style>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+
+    <!-- (1, 2) -->
+    <child>
+      <object class="GtkButton" id="grid_12">
+        <signal name="clicked" handler="_on_select_grid" swapped="no"/>
+        <property name="name">grid_12</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <child>
+          <object class="GtkImage" id="image_12">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="icon-name">gtk-missing-image</property>
+          </object>
+        </child>
+        <style>
+          <class name="grid"/>
+        </style>
+        <layout>
+          <property name="column">2</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+
+    <!-- Third row -->
+    <!-- (2, 0) -->
+    <child>
+      <object class="GtkButton" id="grid_20">
+        <signal name="clicked" handler="_on_select_grid" swapped="no"/>
+        <property name="name">grid_20</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <child>
+          <object class="GtkImage" id="image_20">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="icon-name">gtk-missing-image</property>
+          </object>
+        </child>
+        <style>
+          <class name="grid"/>
+        </style>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+
+    <!-- (2, 1) -->
+    <child>
+      <object class="GtkButton" id="grid_21">
+        <signal name="clicked" handler="_on_select_grid" swapped="no"/>
+        <property name="name">grid_21</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <child>
+          <object class="GtkImage" id="image_21">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="icon-name">gtk-missing-image</property>
+          </object>
+        </child>
+        <style>
+          <class name="grid"/>
+        </style>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+
+    <!-- (2, 2) -->
+    <child>
+      <object class="GtkButton" id="grid_22">
+        <signal name="clicked" handler="_on_select_grid" swapped="no"/>
+        <property name="name">grid_22</property>
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="receives-default">True</property>
+        <child>
+          <object class="GtkImage" id="image_22">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="icon-name">gtk-missing-image</property>
+          </object>
+        </child>
+        <style>
+          <class name="grid"/>
+        </style>
+        <layout>
+          <property name="column">2</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+
+  </template>
+</interface>
+

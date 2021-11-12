@@ -4,5 +4,6 @@
      <file compressed="true">avatar-creator.css</file>
      <file compressed="true" preprocess="xml-stripblanks">about_dialog.ui</file>
      <file compressed="true" preprocess="xml-stripblanks">main_window.ui</file>
+     <file compressed="true" preprocess="xml-stripblanks">grid.ui</file>
   </gresource>
 </gresources>

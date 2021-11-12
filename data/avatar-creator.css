@@ -1,1 +1,27 @@
 /** Custom styles **/
+
+/** TODO:
+ * - Use theme colors instead of fixed ones
+ */
+
+#avatar-grid button {
+  border-radius: 0px;
+  border: 1px dotted rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+}
+
+#avatar-grid button.selected {
+  border: 1px solid orange;
+}
+
+#avatar-grid button image {
+  min-width: 50px;
+  min-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+#avatar-grid {
+  border: 1px solid black;
+}
