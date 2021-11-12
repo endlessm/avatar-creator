@@ -20,7 +20,8 @@
 import gi
 import sys
 gi.require_version('Gtk', '4.0')
-from gi.repository import GLib, Gio, Gtk
+gi.require_version('Adw', '1')
+from gi.repository import GLib, Gio, Gtk, GObject, Adw
 from .main_window import MainWindow
 
 
@@ -38,6 +39,8 @@ class Application(Gtk.Application):
 
     def do_startup(self):
         Gtk.Application.do_startup(self)
+        Adw.init()
+
         GLib.set_application_name('Avatar Creator')
         GLib.set_prgname('Avatar Creator')
 
