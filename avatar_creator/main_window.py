@@ -1,5 +1,5 @@
 import os
-from gi.repository import Gtk, Gdk
+from gi.repository import Gtk, Gdk, GLib, Gio
 from . import config
 
 
@@ -68,3 +68,32 @@ class MainWindow(Gtk.ApplicationWindow):
 
     def _on_module_image_clicked(self, widget):
         self.grid.set(widget.path)
+
+    def on_save_menu_clicked(self, *args):
+        # TODO: show export dialog? Maybe something to define the size and location
+        dest_dir = GLib.get_user_special_dir(GLib.UserDirectory.DIRECTORY_DOCUMENTS)
+
+        # TODO: use native dialog?
+        dialog = Gtk.FileChooserDialog(title='Save avatar',
+                                       action=Gtk.FileChooserAction.SAVE)
+        dialog.add_buttons('_Save', Gtk.ResponseType.ACCEPT,
+                           '_Cancel', Gtk.ResponseType.CANCEL)
+        dialog.set_transient_for(self)
+        dialog.set_modal(True)
+
+        filter = Gtk.FileFilter()
+        filter.set_name('Image')
+        filter.add_pattern('*.png')
+        dialog.set_filter(filter)
+        dialog.set_current_folder(Gio.File.new_for_path(dest_dir))
+        dialog.set_current_name('avatar.png')
+        dialog.connect('response', self._on_save)
+        dialog.show()
+
+    def _on_save(self, widget, response):
+        size = 256
+        if response == Gtk.ResponseType.ACCEPT:
+            path = widget.get_file().get_path()
+            self.grid.export_to_png(path, size)
+
+        widget.destroy()

@@ -1,4 +1,8 @@
-from gi.repository import Gtk
+import cairo
+import gi
+gi.require_version('Rsvg', '2.0')
+
+from gi.repository import Gtk, Rsvg
 
 
 @Gtk.Template.from_resource('/org/endlessos/avatarCreator/grid.ui')
@@ -52,3 +56,22 @@ class Grid(Gtk.Grid):
         pos = self.selected_widget.props.name.split('_')[1]
         image = getattr(self, f'image_{pos}')
         image.set_from_file(path)
+
+    def export_to_png(self, path, size=256):
+        w3 = size / 3
+        surface = cairo.ImageSurface(cairo.Format.ARGB32, size, size)
+        cr = cairo.Context(surface)
+        rect = Rsvg.Rectangle()
+        rect.width = w3
+        rect.height = w3
+
+        for r in range(3):
+            for c in range(3):
+                rect.x = c * w3
+                rect.y = r * w3
+                w = getattr(self, f'image_{r}{c}')
+                if w.props.file:
+                    handle = Rsvg.Handle.new_from_file(w.props.file)
+                    handle.render_document(cr, rect)
+
+        surface.write_to_png(path)

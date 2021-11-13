@@ -16,7 +16,9 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--filesystem=xdg-run/gvfs",
-        "--device=dri"
+        "--device=dri",
+        "--filesystem=xdg-documents",
+        "--filesystem=xdg-pictures"
     ],
     "modules": [
         {

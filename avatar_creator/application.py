@@ -71,8 +71,12 @@ class Application(Gtk.Application):
         quit_action = Gio.SimpleAction.new('quit', None)
         quit_action.connect('activate', self.on_quit_menu_clicked)
 
+        save_action = Gio.SimpleAction.new('save', None)
+        save_action.connect('activate', self.on_save_menu_clicked)
+
         self.add_action(about_action)
         self.add_action(quit_action)
+        self.add_action(save_action)
 
     def on_about_menu_clicked(self, action, param):
         builder = Gtk.Builder()
@@ -82,6 +86,11 @@ class Application(Gtk.Application):
         if self.window is not NotImplemented:
             about_dialog.set_transient_for(self.window)
         about_dialog.present()
+
+    def on_save_menu_clicked(self, action, param):
+        if self.window is NotImplemented:
+            return
+        self.window.on_save_menu_clicked()
 
     def on_quit_menu_clicked(self, action, param):
         self.quit()
