@@ -79,6 +79,7 @@
                 <property name="margin-top">32</property>
                 <property name="margin-start">12</property>
                 <property name="margin-end">12</property>
+                <property name="halign">center</property>
                 <style>
                   <class name="linked"/>
                 </style>
@@ -110,6 +111,19 @@
                 </child>
               </object>
 
+            </child>
+            <child>
+              <object class="GtkBox" id="filter_box">
+                <property name="name">filter-box</property>
+                <property name="orientation">horizontal</property>
+                <property name="margin-top">12</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="halign">center</property>
+                <style>
+                  <class name="linked"/>
+                </style>
+              </object>
             </child>
           </object>
 
