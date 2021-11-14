@@ -64,16 +64,30 @@
 
           <object class="GtkBox">
             <property name="margin-top">32</property>
+            <property name="margin-bottom">32</property>
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="orientation">vertical</property>
             <child>
               <object class="AvatarCreatorGrid" id="grid" />
             </child>
+
+            <child>
+              <object class="GtkBox" id="button_box">
+                <property name="name">button-box</property>
+                <property name="orientation">horizontal</property>
+                <property name="margin-top">32</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <style>
+                  <class name="linked"/>
+                </style>
+              </object>
+            </child>
             <child>
 
-              <object class="GtkScrolledWindow">
-                <property name="margin-top">32</property>
+              <object class="GtkScrolledWindow" id="scrolled_window">
+                <property name="margin-top">12</property>
                 <property name="vexpand">1</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
@@ -82,8 +96,14 @@
                 <child>
                   <object class="GtkViewport">
                     <child>
-                      <object class="GtkFlowBox" id="modules">
+                      <object class="GtkBox" id="modules">
                         <property name="name">modules</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">12</property>
+                        <property name="margin-start">12</property>
+                        <property name="margin-end">12</property>
+                        <property name="margin-top">12</property>
+                        <property name="margin-bottom">12</property>
                       </object>
                     </child>
                   </object>

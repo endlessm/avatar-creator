@@ -25,6 +25,8 @@ class ModuleImage(Gtk.Button):
         self.image = Gtk.Image.new_from_file(path)
         self.set_child(self.image)
 
+        self.get_style_context().add_class('module-image')
+
 
 @Gtk.Template.from_resource('/org/endlessos/avatarCreator/main_window.ui')
 class MainWindow(Gtk.ApplicationWindow):
@@ -33,6 +35,8 @@ class MainWindow(Gtk.ApplicationWindow):
     headerbar = Gtk.Template.Child()
     grid = Gtk.Template.Child()
     modules = Gtk.Template.Child()
+    scrolled_window = Gtk.Template.Child()
+    button_box = Gtk.Template.Child()
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -40,7 +44,6 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_titlebar(self.headerbar)
         self.custom_css()
 
-        self._modules_groups = {}
         self.populate_modules(DEFAULT_VARIANT)
 
     def custom_css(self):
@@ -54,17 +57,35 @@ class MainWindow(Gtk.ApplicationWindow):
     def populate_modules(self, variant):
         assets = os.path.join(config.DATA_DIR, 'assets', variant)
         groups = os.listdir(assets)
+        modules_groups = {}
         for group in groups:
             group_path = os.path.join(assets, group)
             images = os.listdir(group_path)
             images = [ModuleImage(os.path.join(group_path, i)) for i in images]
-            self._modules_groups[group] = images
+            modules_groups[group] = images
 
-        # TODO: Add widgets grouped in a stack
-        for g, images in self._modules_groups.items():
-            for img in images:
+        for g, images in modules_groups.items():
+            flowbox = Gtk.FlowBox()
+            label = Gtk.Label()
+            label.set_markup(f'<b>{g}</b>')
+            label.set_xalign(0.0)
+
+            self.modules.append(label)
+            self.modules.append(flowbox)
+
+            # Buttons
+            group_button = Gtk.Button(label=g)
+            group_button.connect('clicked', self.scroll_to_group, label)
+            self.button_box.append(group_button)
+
+            for i, img in enumerate(images):
                 img.connect('clicked', self._on_module_image_clicked)
-                self.modules.insert(img, 0)
+                flowbox.insert(img, i)
+
+    def scroll_to_group(self, button, group):
+        adj = self.scrolled_window.get_vadjustment()
+        alloc = group.get_allocation()
+        adj.set_value(alloc.y)
 
     def _on_module_image_clicked(self, widget):
         self.grid.set(widget.path)
