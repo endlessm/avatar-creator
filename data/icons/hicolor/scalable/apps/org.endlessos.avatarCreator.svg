@@ -1,405 +1,67 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="128"
-   height="128"
-   viewBox="0 0 128 128"
-   fill="none"
-   version="1.1"
-   id="svg109"
-   sodipodi:docname="org.endlessos.avatarCreator.svg"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview111"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     showgrid="false"
-     inkscape:zoom="1.8723958"
-     inkscape:cx="64.623088"
-     inkscape:cy="96.133519"
-     inkscape:window-width="1920"
-     inkscape:window-height="1011"
-     inkscape:window-x="0"
-     inkscape:window-y="32"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg109" />
-  <g
-     clip-path="url(#clip5_23:3731)"
-     id="g80">
-    <rect
-       x="64"
-       y="144"
-       width="4"
-       height="32"
-       fill="#3a434b"
-       id="rect66" />
-    <rect
-       x="74"
-       y="144"
-       width="4"
-       height="32"
-       fill="#3a434b"
-       id="rect68" />
-    <rect
-       x="84"
-       y="144"
-       width="4"
-       height="32"
-       fill="#3a434b"
-       id="rect70" />
-    <rect
-       x="94"
-       y="144"
-       width="4"
-       height="32"
-       fill="#3a434b"
-       id="rect72" />
-    <rect
-       x="104"
-       y="144"
-       width="4"
-       height="32"
-       fill="#3a434b"
-       id="rect74" />
-    <rect
-       x="114"
-       y="144"
-       width="4"
-       height="32"
-       fill="#3a434b"
-       id="rect76" />
-    <rect
-       x="124"
-       y="144"
-       width="4"
-       height="32"
-       fill="#3a434b"
-       id="rect78" />
-  </g>
-  <g
-     id="g1203"
-     transform="translate(4,4)">
-    <path
-       d="M 0,10 C 0,4.4771497 4.47715,0 10,0 H 40 V 39.999997 H 0 Z"
-       fill="#75b046"
-       id="path2"
-       style="stroke-width:1" />
-    <circle
-       cx="10"
-       cy="10"
-       fill="#970b36"
-       id="circle4"
-       style="stroke-width:1"
-       r="2.5" />
-    <circle
-       cx="29.999998"
-       cy="10"
-       fill="#970b36"
-       id="circle6"
-       style="stroke-width:1"
-       r="2.5" />
-    <rect
-       x="40"
-       width="40"
-       height="40"
-       fill="#75b046"
-       id="rect8"
-       y="0"
-       style="stroke-width:1" />
-    <g
-       clip-path="url(#clip0_23:3731)"
-       id="g16"
-       transform="scale(0.625)"
-       style="stroke-width:1.60001">
-      <path
-         d="M 176,-6.99382e-7 C 184.837,-3.13124e-7 192,7.16344 192,16 V 64 H 128 V -2.79753e-6 Z"
-         fill="#75b046"
-         id="path10"
-         style="stroke-width:2.37525" />
-      <circle
-         cx="144"
-         cy="16"
-         r="4"
-         fill="#970b36"
-         id="circle12"
-         style="stroke-width:2.37525" />
-      <circle
-         cx="176"
-         cy="16"
-         r="4"
-         fill="#970b36"
-         id="circle14"
-         style="stroke-width:2.37525" />
-    </g>
-    <rect
-       y="40"
-       width="40"
-       height="40"
-       fill="#c6cbd0"
-       id="rect18"
-       x="0"
-       style="stroke-width:1" />
-    <rect
-       y="40"
-       width="40"
-       height="40"
-       fill="#c6cbd0"
-       id="rect20"
-       x="0"
-       style="stroke-width:1" />
-    <rect
-       x="10.625"
-       y="50.624996"
-       width="18.75"
-       height="18.749998"
-       rx="9.375"
-       fill="#f8aa04"
-       stroke="#970b36"
-       stroke-width="2"
-       id="rect22" />
-    <line
-       x1="11.25"
-       y1="59.999996"
-       x2="28.75"
-       y2="59.999996"
-       stroke="#ff7a02"
-       stroke-width="2"
-       id="line24" />
-    <circle
-       cx="20"
-       cy="59.999996"
-       fill="#970b36"
-       id="circle26"
-       style="stroke-width:1"
-       r="2.5" />
-    <line
-       x1="20"
-       y1="50.624996"
-       x2="20"
-       y2="44.999996"
-       stroke="#970b36"
-       stroke-width="2"
-       id="line28" />
-    <line
-       x1="15.625"
-       y1="51.874996"
-       x2="15.625"
-       y2="44.999996"
-       stroke="#970b36"
-       stroke-width="2"
-       id="line30" />
-    <line
-       x1="25"
-       y1="51.874996"
-       x2="25"
-       y2="44.999996"
-       stroke="#970b36"
-       stroke-width="2"
-       id="line32" />
-    <line
-       x1="10.625"
-       y1="59.374996"
-       x2="10.625"
-       y2="44.999996"
-       stroke="#970b36"
-       stroke-width="2"
-       id="line34" />
-    <line
-       x1="29.375"
-       y1="59.374996"
-       x2="29.375"
-       y2="44.999996"
-       stroke="#970b36"
-       stroke-width="2"
-       id="line36" />
-    <g
-       clip-path="url(#clip1_23:3731)"
-       id="g46"
-       transform="scale(0.625)"
-       style="stroke-width:1.60001">
-      <rect
-         x="64"
-         y="64"
-         width="64"
-         height="64"
-         fill="#c6cbd0"
-         id="rect38"
-         style="stroke-width:2.37525" />
-      <path
-         d="M 96,112 128,128.5 96,64 Z"
-         fill="#ff7a02"
-         id="path40"
-         style="stroke-width:2.37525" />
-      <path
-         d="M 96,112 64,128.5 96,64 Z"
-         fill="#f8aa04"
-         id="path42"
-         style="stroke-width:2.37525" />
-      <path
-         d="M 128.5,128 H 64 l 32.5,-16.5 z"
-         fill="#970b36"
-         id="path44"
-         style="stroke-width:2.37525" />
-    </g>
-    <g
-       clip-path="url(#clip2_23:3731)"
-       id="g58"
-       transform="scale(0.625)"
-       style="stroke-width:1.60001">
-      <rect
-         x="128"
-         y="64"
-         width="64"
-         height="64"
-         fill="#c6cbd0"
-         id="rect48"
-         style="stroke-width:2.37525" />
-      <g
-         clip-path="url(#clip3_23:3731)"
-         id="g52"
-         style="stroke-width:1.60001">
-        <rect
-           x="128"
-           y="128"
-           width="64"
-           height="64"
-           transform="rotate(-90,128,128)"
-           fill="#c6cbd0"
-           id="rect50"
-           style="stroke-width:2.37525" />
-      </g>
-      <rect
-         x="145"
-         y="111"
-         width="30"
-         height="30"
-         rx="15"
-         transform="rotate(-90,145,111)"
-         fill="#f8aa04"
-         stroke="#970b36"
-         stroke-width="3.19999"
-         id="rect54" />
-      <line
-         x1="146"
-         y1="96"
-         x2="174"
-         y2="96"
-         stroke="#970b36"
-         stroke-width="3.19999"
-         id="line56" />
-    </g>
-    <g
-       clip-path="url(#clip4_23:3731)"
-       id="g62"
-       transform="scale(0.625)"
-       style="stroke-width:1.60001">
-      <path
-         d="M 48,144 8.39259e-6,128 H 64 v 64 z"
-         fill="#c6cbd0"
-         id="path60"
-         style="stroke-width:2.37525" />
-    </g>
-    <rect
-       x="40"
-       y="80"
-       width="40"
-       height="40"
-       fill="#c6cbd0"
-       id="rect64"
-       style="stroke-width:1" />
-    <path
-       d="m 41.25,91.249994 h 37.5 V 108.75 h -37.5 z"
-       stroke="#3a434b"
-       stroke-width="4"
-       id="path82" />
-    <g
-       clip-path="url(#clip6_23:3731)"
-       id="g86"
-       transform="scale(0.625)"
-       style="stroke-width:1.60001">
-      <path
-         d="m 144,144 -16,48 v -64 h 64 z"
-         fill="#c6cbd0"
-         id="path84"
-         style="stroke-width:2.37525" />
-    </g>
-  </g>
-  <defs
-     id="defs107">
-    <clipPath
-       id="clip0_23:3731">
-      <rect
-         width="64"
-         height="64"
-         fill="#ffffff"
-         transform="translate(128)"
-         id="rect88"
-         x="0"
-         y="0" />
-    </clipPath>
-    <clipPath
-       id="clip1_23:3731">
-      <rect
-         width="64"
-         height="64"
-         fill="#ffffff"
-         transform="translate(64,64)"
-         id="rect91"
-         x="0"
-         y="0" />
-    </clipPath>
-    <clipPath
-       id="clip2_23:3731">
-      <rect
-         width="64"
-         height="64"
-         fill="#ffffff"
-         transform="translate(128,64)"
-         id="rect94"
-         x="0"
-         y="0" />
-    </clipPath>
-    <clipPath
-       id="clip3_23:3731">
-      <rect
-         width="64"
-         height="64"
-         fill="#ffffff"
-         transform="rotate(-90,128,0)"
-         id="rect97"
-         x="0"
-         y="0" />
-    </clipPath>
-    <clipPath
-       id="clip4_23:3731">
-      <rect
-         width="64"
-         height="64"
-         fill="#ffffff"
-         transform="rotate(180,32,96)"
-         id="rect100"
-         x="0"
-         y="0" />
-    </clipPath>
-    <clipPath
-       id="clip5_23:3731" />
-    <clipPath
-       id="clip6_23:3731">
-      <rect
-         width="64"
-         height="64"
-         fill="#ffffff"
-         transform="translate(128,128)"
-         id="rect104"
-         x="0"
-         y="0" />
-    </clipPath>
-  </defs>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 14C4 8.47715 8.47715 4 14 4H44V44H4V14Z" fill="#75B046"/>
+<circle cx="14" cy="14" r="2.5" fill="#970B36"/>
+<circle cx="34" cy="14" r="2.5" fill="#970B36"/>
+<rect x="44" y="4" width="40" height="40" fill="#75B046"/>
+<path d="M114 4C119.523 4 124 8.47715 124 14V44H84L84 4L114 4Z" fill="#75B046"/>
+<circle cx="94" cy="14" r="2.5" fill="#970B36"/>
+<ellipse cx="114" cy="14" rx="2.5" ry="2.5" fill="#970B36"/>
+<g clip-path="url(#clip0_59_13913)">
+<rect x="4" y="44" width="40" height="40" fill="#C6CBD0"/>
+<path d="M14 64C14 58.4772 18.4772 54 24 54V54C29.5228 54 34 58.4772 34 64V64C34 69.5229 29.5228 74 24 74V74C18.4772 74 14 69.5229 14 64V64Z" fill="#F8AA04"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.25 64C15.25 68.8325 19.1675 72.75 24 72.75C28.8325 72.75 32.75 68.8325 32.75 64C32.75 59.1675 28.8325 55.25 24 55.25C19.1675 55.25 15.25 59.1675 15.25 64ZM24 54C18.4772 54 14 58.4772 14 64C14 69.5229 18.4772 74 24 74C29.5228 74 34 69.5229 34 64C34 58.4772 29.5228 54 24 54Z" fill="#970B36"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32.75 64.625L15.25 64.625V63.375L32.75 63.375V64.625Z" fill="#FF7A02"/>
+<ellipse cx="24" cy="64" rx="2.5" ry="2.5" fill="#970B36"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.25 49L15.25 63.375H14L14 49H15.25ZM20.25 49L20.25 55.875H19L19 49H20.25ZM24.625 49V54.625H23.375V49H24.625ZM29.625 49V55.875H28.375V49H29.625ZM34 49V63.375H32.75L32.75 49H34Z" fill="#970B36"/>
+</g>
+<g clip-path="url(#clip1_59_13913)">
+<rect x="44" y="44" width="40" height="40" fill="#C6CBD0"/>
+<path d="M64 74L84 84.3125L64 44V74Z" fill="#FF7A02"/>
+<path d="M64 74L44 84.3125L64 44V74Z" fill="#F8AA04"/>
+<path d="M84.3125 84L44 84L64.3125 73.6875L84.3125 84Z" fill="#970B36"/>
+</g>
+<g clip-path="url(#clip2_59_13913)">
+<rect x="84" y="44" width="40" height="40" fill="#C6CBD0"/>
+<path d="M104 74C98.4772 74 94 69.5228 94 64V64C94 58.4771 98.4772 54 104 54V54C109.523 54 114 58.4772 114 64V64C114 69.5228 109.523 74 104 74V74Z" fill="#F8AA04"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M104 72.75C108.832 72.75 112.75 68.8325 112.75 64C112.75 59.1675 108.832 55.25 104 55.25C99.1675 55.25 95.25 59.1675 95.25 64C95.25 68.8325 99.1675 72.75 104 72.75ZM94 64C94 69.5228 98.4772 74 104 74C109.523 74 114 69.5228 114 64C114 58.4772 109.523 54 104 54C98.4772 54 94 58.4771 94 64Z" fill="#970B36"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M112.75 64.625L95.25 64.625L95.25 63.375L112.75 63.375L112.75 64.625Z" fill="#970B36"/>
+</g>
+<g clip-path="url(#clip3_59_13913)">
+<path d="M34 94L4.00001 84L44 84L44 124L34 94Z" fill="#C6CBD0"/>
+</g>
+<g clip-path="url(#clip4_59_13913)">
+<rect x="44" y="84" width="40" height="40" fill="#C6CBD0"/>
+<path d="M44 94H46.5V114H44V94Z" fill="#3A434B"/>
+<path d="M50.25 94H52.75V114H50.25V94Z" fill="#3A434B"/>
+<path d="M56.5 94H59V114H56.5V94Z" fill="#3A434B"/>
+<path d="M62.75 94H65.25V114H62.75V94Z" fill="#3A434B"/>
+<path d="M69 94H71.5V114H69V94Z" fill="#3A434B"/>
+<path d="M75.25 94H77.75V114H75.25V94Z" fill="#3A434B"/>
+<path d="M81.5 94H84V114H81.5V94Z" fill="#3A434B"/>
+<path d="M84 94V96.5L44 96.5L44 94H84Z" fill="#3A434B"/>
+<path d="M84 111.5V114H44V111.5H84Z" fill="#3A434B"/>
+</g>
+<g clip-path="url(#clip5_59_13913)">
+<path d="M94 94L84 124L84 84L124 84L94 94Z" fill="#C6CBD0"/>
+</g>
+<defs>
+<clipPath id="clip0_59_13913">
+<rect width="40" height="40" fill="white" transform="translate(4 44)"/>
+</clipPath>
+<clipPath id="clip1_59_13913">
+<rect width="40" height="40" fill="white" transform="translate(44 44)"/>
+</clipPath>
+<clipPath id="clip2_59_13913">
+<rect width="40" height="40" fill="white" transform="translate(84 44)"/>
+</clipPath>
+<clipPath id="clip3_59_13913">
+<rect width="40" height="40" fill="white" transform="translate(44 124) rotate(-180)"/>
+</clipPath>
+<clipPath id="clip4_59_13913">
+<rect width="40" height="40" fill="white" transform="translate(44 84)"/>
+</clipPath>
+<clipPath id="clip5_59_13913">
+<rect width="40" height="40" fill="white" transform="translate(84 84)"/>
+</clipPath>
+</defs>
 </svg>
