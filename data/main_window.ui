@@ -54,6 +54,39 @@
             </child>
 
             <child>
+              <object class="GtkBox" id="transformation_box">
+                <property name="orientation">horizontal</property>
+                <property name="margin-start">12</property>
+                <property name="margin-end">12</property>
+                <property name="halign">center</property>
+                <style>
+                  <class name="linked"/>
+                </style>
+                <child>
+                  <object class="GtkButton" id="rotate">
+                    <property name="icon-name">object-rotate-right-symbolic</property>
+                    <signal name="clicked" handler="on_rotate" />
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="hmirror">
+                    <property name="icon-name">view-mirror-symbolic</property>
+                    <signal name="clicked" handler="on_hmirror" />
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="vmirror">
+                    <property name="icon-name">view-mirror-symbolic</property>
+                    <signal name="clicked" handler="on_vmirror" />
+                    <style>
+                      <class name="vmirror"/>
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
+
+            <child>
               <object class="GtkBox" id="button_box">
                 <property name="name">button-box</property>
                 <property name="orientation">horizontal</property>

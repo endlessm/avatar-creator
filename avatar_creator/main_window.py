@@ -55,6 +55,18 @@ class MainWindow(Gtk.ApplicationWindow):
         self.populate_modules(DEFAULT_VARIANT)
         self.populate_filters()
 
+    @Gtk.Template.Callback()
+    def on_rotate(self, *args):
+        self.grid.rotate()
+
+    @Gtk.Template.Callback()
+    def on_hmirror(self, *args):
+        print("Horizontal Mirror")
+
+    @Gtk.Template.Callback()
+    def on_vmirror(self, *args):
+        print("Vertical Mirror")
+
     def custom_css(self):
         css_provider = Gtk.CssProvider()
         css_provider.load_from_resource("/org/endlessos/avatarCreator/avatar-creator.css")

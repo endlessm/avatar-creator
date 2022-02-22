@@ -29,7 +29,7 @@ GObject.type_register(Grid)
 from .main_window import MainWindow
 
 
-class Application(Gtk.Application):
+class Application(Adw.Application):
     window = NotImplemented
     file_list = []
     development_mode = False
