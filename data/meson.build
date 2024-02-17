@@ -19,7 +19,6 @@ gnome.compile_resources(
 desktop_conf = configuration_data()
 desktop_conf.set('ICON', application_id)
 desktop = i18n.merge_file(
-  'desktop',
   input: configure_file(
     input: files(project_id + '.desktop.in.in'),
     output: project_id + '.desktop.in',
@@ -45,7 +44,6 @@ endif
 appdata_conf = configuration_data()
 appdata_conf.set('APPID', application_id)
 appdata = i18n.merge_file(
-  'appdata',
   input: configure_file(
     input: files(project_id + '.appdata.xml.in.in'),
     output: project_id + '.appdata.xml.in',
